@@ -1,0 +1,112 @@
+.titre{
+   text-align: center;
+   vertical-align: top;
+   color:blue;
+   line-height-step:15px;
+  
+} 
+#header{
+  
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0px 70px;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+   z-index: 999;
+   position: sticky;
+   top: 0;
+   left: 0;
+   background-color: white;
+}
+
+#mainbar{
+   font-family: system-ui;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ #mainbar li{
+   list-style: none;
+   padding: 0 20px;
+ }
+ #mainbar li a:hover ,
+ #mainbar li a.active{
+   color:blue;
+     
+ }
+  a {
+   color: black;
+   text-decoration: none;
+   display: inline;
+ }
+ #logo {
+   width: 30%;
+   
+ }
+
+
+
+body{
+   background-color: white;
+   font-family: system-ui; 
+
+}
+
+
+button{
+   background-color: rgb(101, 155, 183);
+    top:50%;
+    color: #fff;
+    border:none;
+    border-radius:20px;
+    font-size: 17px; 
+   
+}
+
+
+
+#info {
+  padding: 50px ;
+  padding-bottom: 10px;
+   background-color: rgb(105, 178, 237);
+  
+}
+table {
+   border-spacing: 100px 10px;
+}
+#icon {
+   width: 30px;
+}
+footer {
+   padding-top: 50px;
+}
+#video{
+   padding-left: 100px;
+
+   
+}
+#text{
+   padding-top: 100px;
+}
+.co{
+   background-color: white;
+   display: flex;
+   padding-left: 20%;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   border-bottom: solid;
+   border-color:  #bdc8cb;
+   color: #325c86;
+}
+
+#main{
+   padding: 50px;
+   padding-bottom: 200px;
+   background-size: cover;
+   background-image: url("back.png");
+}
+.comment a:hover
+ {
+   color:rgb(68, 68, 156);
+   }
+

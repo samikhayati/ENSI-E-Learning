@@ -1,0 +1,102 @@
+body{
+    width: 100%;
+    font-family: system-ui;
+   
+    
+    
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 70px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+#mainbar{
+    font-family: system-ui;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #mainbar li{
+    list-style: none;
+    padding: 0 20px;
+  }
+  #mainbar li a:hover ,
+  #mainbar li a.active{
+    color:blue;
+      
+  }
+  div a {
+    color: black;
+    text-decoration: none;
+  }
+  img {
+    width: 20%;
+    
+  }
+#product1 .p-container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-left: 220px;
+    padding-right: 220px;
+    
+   
+    
+}
+#product1{
+    text-align: center;
+    
+  
+   
+   
+
+}
+#product1 .p{
+    width: 23%;
+    min-width: 250px;
+    padding: 20px;
+    border: 1px solid #b7c4ce;
+    border-radius: 25px;
+    cursor:pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    margin: 15px 0;
+    background-color: rgb(179, 196, 229);
+    
+}
+
+#image {
+    width: 100%;
+    border-radius: 20px;
+
+}
+#product1 .p:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+#pagination{
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
+#pagination a {
+  text-decoration: none;
+  background-color: rgb(28, 89, 115);
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: aliceblue;
+  font-weight: 600;
+}
+
+
+
+

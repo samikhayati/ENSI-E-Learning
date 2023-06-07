@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>page2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='main2.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logo.jpg" id="logo" alt=""> </a>
+
+        <div>
+            <ul id="mainbar">
+                <li><a class="active" href="home.html">Acceuil</a></li>
+                <li><a href="page2.html">Apropos</a></li>
+                <button class="con"><a href="page8.html"> Connexion <span style="color: black;">  </span>   </a></button>
+                <button class="con"><a href="page7.html"> Inscription<span style="color: black;"> </span>   </a></button>
+
+                
+            </ul>
+        </div>
+    </section>
+    <section>
+    <ol style=" font-size: 40px;">
+        <li> <a href="#o1" style="color: black;" onmouseover="movct(this)" onmouseout="motct(this)"> tableaux des coefficients des matieres</a> </li>
+        <li> <a href="#o2"style="color: black;" onmouseover="movct(this)" onmouseout="motct(this)">  Filière de formation d'ingénieurs</a></li>
+        <li> <a href="#o3" style="color: black;" onmouseover="movct(this)" onmouseout="motct(this)">clubs & associations</a> </li>
+
+    </ol> 
+    <br><br><br>
+    <section>
+    <h1 class="title"><a name="o1"> tableaux des coeffecients des matieres </a>  </h1>
+    <caption ><h2> les matiers du 1ere année : </h2></caption>
+    <table class="tab1" >
+        <thead>
+            <tr>
+                <td> matiers</td>
+                <td>coeffecient</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> math ge l'ing</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td> probabilite</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td> algorithme</td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+                <td> TLA</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td> circuit numerique</td>
+                <td> 3 </td>
+            </tr>
+            <tr>
+                <td> finance</td>
+                <td> 3 </td>
+            </tr>
+            <tr>
+                <td> gestion</td>
+                <td> 3 </td>
+            </tr>
+
+            <tr>
+                <td> programmation C</td>
+                <td> 1.5</td>
+            </tr>
+            <tr>
+                <td> electronique</td>
+                <td> 1.5 </td>
+            </tr>
+            <tr>
+                <td> francais</td>
+                <td>1.5</td>
+            </tr>
+            <tr>
+                <td> anglais</td>
+                <td>1.5 </td>
+            </tr>
+        </tbody>
+    </table>
+    <caption > <h2 style="color: black;position: relative;left:750px;bottom: 710px ;">les matiers du 2eme semestre : </h2></caption>
+    <table class="tab2">
+        <thead>
+            <tr>
+                <td> matiers</td>
+                <td>coeffecient</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> analyse numerique</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td> algorithme de graphe</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td> introduction a l'image</td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+                <td> base de donneè</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td> programmation orientee objet</td>
+                <td> 3 </td>
+            </tr>
+            <tr>
+                <td> systeme d'exploitation</td>
+                <td> 3 </td>
+            </tr>
+            <tr>
+                <td> transmission numerique</td>
+                <td> 3 </td>
+            </tr>
+            <tr>
+                <td> microprocesseur</td>
+                <td> 3</td>
+            </tr>
+            <tr>
+                <td> devellopement web</td>
+                <td> 1.5</td>
+            </tr>
+            <tr>
+                <td> francais</td>
+                <td>1.5</td>
+            </tr>
+            <tr>
+                <td> anglais</td>
+                <td>1.5 </td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+    <div>
+        <h2><a name="o2">  Filière de formation d'ingénieurs:</a></h2>
+        <ul type="square">
+            <li> Génie Logiciel (GL)</li>
+            <li> Intelligence Artificielle (IA)</li>
+            <li>Data Science pour le Computer Vision (DS&CV)</li>
+            <li>Ingénierie Informatique pour la Finance (IF)</li>
+            <li>Services et Technologies de l'Internet des Objets (ST-IoT)</li>
+            <li>Systèmes et Logiciels Embarqués (SLE)</li>
+        </ul>
+
+    </div>
+    <br><br><br><br><br>
+
+    <div>
+        <h2><a name="o3"> CLUBS & ASSOCIATIONS</a> </h2>
+        <div class="diaporama">
+       
+            <img id="image" src="1.jpg">
+        
+            <script>
+                const images = [
+                    "1.jpg",
+                    "2.png",
+                    "3.png",
+                    "4.png",
+                    "5.jpg",
+                    "6.jpg",
+                    "7.jpg",
+                    "8.jpg"
+                ];
+        
+                let i= 0;
+                const Element = document.getElementById("image");
+        
+                function changeImage() {
+                    i = (i + 1) % images.length;
+                    Element.src = images[i];
+                }
+        
+                setInterval(changeImage, 5000);
+        
+            </script>
+        </div>
+
+       <h4>Sport & Art & Culture:</h4>
+        <ul class="ul1">
+    <li>Co’Art: Collaborative Art Club</li>
+    <li>ENSI Music Club</li>
+    <li>ENSI Chess Club</li>
+    <li>Club de lecture</li>
+    <li>Club d’animation ENSI</li>
+    <li>Club de théâtre</li>
+  </ul>
+  <h4> Services Humanitaires & ouverture sur l’env:</h4>
+
+  <ul class="ul2">
+    <li>CPS ENSI : Citoyens Positifs et Sociables</li>
+    <li>NATEG ENSI Student Branch (nouveau)</li>
+    <li>Netlinks: Netlinks’ ENSI branch (ancien)</li>
+  </ul>
+  <h4>Science & Technologie & Innovation:</h4>
+  <ul class="ul3">
+    <li>EJE : association ENSI Junior Enterprise</li>
+    <li>ARE : association Robotique de l’ENSI</li>
+    <li>CSI: Cyber Security Community</li>
+    <li>ECPC: ENSI Competitive Programming Club</li>
+    <li>EMC: ENSI Microsoft Club</li>
+    <li>GDG ENSI: Google Developer Group at ENSI</li>
+    <li>IEEE: IEEE ENSI Student Branch</li>
+    <li>OSSEC: Open Source Software ENSI Club</li>
+
+
+    </ul>
+    </div>
+    <script src="script.js">
+
+    </script>
+    </section>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logo.jpg" id="logo" alt=""> </a>
+
+        <div>
+            <ul id="mainbar">
+                <li><a class="active" href="mainpage.html">Acceuil</a></li>
+                <li><a href="page2.html">Apropos</a></li>
+                <button class="con"><a href="page8.html"> Connexion <span style="color: black;">  </span>   </a></button>
+                <button class="con"><a href="page7.html"> Inscription<span style="color: black;"> </span>   </a></button>
+
+                
+            </ul>
+        </div>
+    </section>
+
+    <form method="post" action="test.php">
+          
+        
+        <fieldset>
+            <table>
+
+                <tr>
+                    <td>Nom:</td>
+                    <td> <input type="text" name="nom" required>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td> Prenom:</td>
+                    <td> <input type="text" name="prenom" required></td>
+
+                </tr>
+                <tr>
+                    <td>Mail:</td>
+                    <td> <input type="email" name="mail" required></td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label for="comment">Commentaire</label>
+        <br>
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Ecrivez ici votre question ou commentaire  .."></textarea>
+
+                    </td>
+            </tr> 
+            </table>        
+       
+        <div>
+
+            <input type="submit" value="Postuler" />
+            <input type="reset" value="Annuler" />
+        </div>
+         </fieldset>
+    </form>
+    <script src="script.js"></script>
+
+</body>
+</html>

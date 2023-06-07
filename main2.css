@@ -1,0 +1,118 @@
+
+#header{
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 70px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+ }
+ 
+ #mainbar{
+    font-family: system-ui;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #mainbar li{
+    list-style: none;
+    padding: 0 20px;
+  }
+  #mainbar li a:hover ,
+  #mainbar li a.active{
+    color:blue;
+      
+  }
+   a {
+    color: black;
+    text-decoration: none;
+    
+  }
+  #logo {
+    width: 30%;
+    
+  }
+ 
+ 
+ 
+ body{
+    background-color: white;
+    font-family: system-ui;
+    width: 100%;
+    
+ 
+ }
+ section{
+    padding-left: 100px;
+ }
+ 
+ 
+ button{
+    background-color: rgb(101, 155, 183);
+     top:50%;
+     color: #fff;
+     border:none;
+     border-radius:20px;
+     font-size: 17px; 
+    
+ }
+.title{
+    padding-left: 20%;
+    font-size: 30px;
+
+}
+.diaporama {
+	width: 200px;
+	
+	margin: auto;
+    padding-right: 100%;
+    padding-bottom: 0px;
+}
+
+#image {
+	width: 200px;
+	
+	
+}
+section{
+    padding-bottom: 10px;
+}
+thead{
+    color:rgb(247, 135, 7);
+    text-align: center;
+    font-size: 20px;
+}
+
+.tab2{
+    position: relative;
+    left: 750px;
+    bottom: 710px;
+}
+table{
+    border: 1px solid black;
+}
+ td{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(238, 235, 235, 0.842);
+    /* border: 2px solid black; */
+} 
+tr{
+    border: 2px solid black;
+}
+.ul1{
+    list-style-image: url(sport2.png);  
+}
+.ul2{
+    list-style-image: url(friends2.png);  
+}
+.ul3{
+    list-style-image: url(innovation2.png);  
+}
